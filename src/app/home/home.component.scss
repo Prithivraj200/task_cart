@@ -1,0 +1,60 @@
+.cart {
+    text-align: center;
+    .inline-block {
+        display: inline-block;
+        margin-right: 62px;
+
+        &.apple {
+            border: 1px solid red;
+            padding: 20px;
+            background: red;
+            margin-left: 50px;
+        }
+        &.orange {
+            border: 1px solid orange;
+            padding: 20px;
+            background: orange;
+        }
+        &.grapes {
+            border: 1px solid blue;
+            padding: 20px;
+            background: blue;
+        }
+
+        .add {
+            border-radius: 25px;
+            border: 1px solid black;
+        }
+
+        .minus {
+            @extend .add;
+        }
+    }
+}
+
+.bucket-list {
+    margin-top: 50px;
+    .title {
+        text-align: center;
+    }
+    .list {
+        border: 1px solid black;
+        margin: auto;
+        width: 200px;
+        .apple {
+            border: 1px solid red;
+            padding: 2px;
+            background: red;
+        }
+        .orange {
+            border: 1px solid orange;
+            padding: 2px;
+            background: orange;
+        }
+        .grapes {
+            border: 1px solid blue;
+            padding: 2px;
+            background: blue;
+        }
+    }
+}

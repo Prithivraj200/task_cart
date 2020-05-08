@@ -1,0 +1,18 @@
+.login-form {
+    text-align: center;
+    margin-top: 150px;
+    .form-group {
+        margin-top: 10px;
+        .label {
+            margin-right: 15px;
+        }
+        .form-control {
+            border-radius: 5px;
+        }
+    }
+    .submit {
+        cursor: pointer;
+        margin-top: 10px;
+        border-radius: 2px;
+    }
+}

@@ -1,0 +1,35 @@
+<section name="add to cart">
+    <div class="cart">
+        <ng-container *ngFor="let cartItem of cartList">
+            <div class="inline-block" [ngClass]="cartItem.name.toLowerCase()">
+                <div>{{ cartItem.name }}</div>
+                <div>{{ cartItem.quantity }}</div>
+                <div>
+                    <button
+                        class="minus"
+                        (click)="updateBucketList(cartItem.id, 'minus')"
+                    >
+                        -</button
+                    >&nbsp;
+                    <button
+                        class="add"
+                        (click)="updateBucketList(cartItem.id, 'add')"
+                    >
+                        +
+                    </button>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</section>
+
+<section name="display added cart">
+    <div class="bucket-list">
+        <div class="title">Bucket List</div>
+        <div [ngClass]="{ list: bucketList.length }">
+            <ng-container *ngFor="let item of bucketList">
+                <div [ngClass]="item.name.toLowerCase()"></div>
+            </ng-container>
+        </div>
+    </div>
+</section>
